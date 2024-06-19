@@ -6,7 +6,15 @@
 // var list[ = [10,20,30,40,50]//
 //The dart list is defined by storing all elements inside the square bracket() and seperated by commas(,)
 main() {
-  var listNames = [10, 20, 30, 40,];
-  listNames.add(60);
-  print('$listNames');
+  var listNames = [10, 20, 30, 40];
+  listNames.add(50);
+
+  var names = [];
+  names.add("Jenish");
+  names.add("Ranujan");
+  names.add("mira");
+  //names.addAll(listNames);
+  names.insert(2, 100);
+  names.insertAll(3, listNames);
+  print("$names");
 }
