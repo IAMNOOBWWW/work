@@ -44,52 +44,66 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                height: 200,
-                width: 200,
-                color: Colors.red,
-              ),
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                height: 200,
-                width: 200,
-                color: Colors.pinkAccent,
+          scrollDirection: Axis.horizontal,
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only( right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.lightGreenAccent,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only( right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.redAccent,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only( right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.white60,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.lightGreenAccent,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only( right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only( right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.redAccent,
+                  ),
+                  Container(
+                    margin: EdgeInsets.only( right: 11),
+                    width: 200,
+                    height: 200,
+                    color: Colors.white60,
+                  ),
+
+
+                ],
 
               ),
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                height: 200,
-                width: 200,
-                color: Colors.blue,
-
-              ),
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                height: 200,
-                width: 200,
-                color: Colors.greenAccent,
-              ),
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                height: 200,
-                width: 200,
-                color: Colors.yellow,
-              ),
-
-              Container(
-                margin: EdgeInsets.only(bottom: 11),
-                height: 200,
-                width: 200,
-                color: Colors.lightGreenAccent,
-              ),
-
-
-
-
-            ],
+            ),
           ),
         ),
       ),
